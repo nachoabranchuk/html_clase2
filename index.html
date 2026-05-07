@@ -370,22 +370,22 @@
 
     <script>
 function showTab(type) {
-    // 1. Ocultar todas las tablas
+   
     const tables = document.querySelectorAll('.infosys-table');
     tables.forEach(table => {
         table.classList.remove('active');
     });
 
-    // 2. Desactivar todas las pestañas
+    
     const tabs = document.querySelectorAll('.infosys-tabs .tab-btn');
     tabs.forEach(tab => {
         tab.classList.remove('active');
     });
 
-    // 3. Mostrar la tabla seleccionada
+   
     document.getElementById('stats-table-' + type).classList.add('active');
 
-    // 4. Activar la pestaña seleccionada
+    
     document.getElementById('tab-' + type).classList.add('active');
 }
 </script>

@@ -38,14 +38,14 @@ body { font-family: 'Segoe UI', sans-serif; color: #333; line-height: 1.6; overf
 .article-body p { margin-bottom: 20px; font-size: 1.05rem; }
 blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; font-style: italic; background: #f9f9f9; margin: 30px 0; }
 
-/* Tweet */
+
 .tweet-link-wrapper { text-decoration: none; color: inherit; display: block; max-width: 550px; margin: 30px 0; }
 .tweet-container { border: 1px solid #e1e1e1; border-radius: 12px; padding: 15px; transition: 0.2s; background: #fff; }
 .tweet-container:hover { background: #f7f7f7; }
 .tweet-avatar { width: 40px; border-radius: 50%; margin-right: 10px; vertical-align: middle; }
 .tweet-image { width: 100%; border-radius: 12px; margin-top: 10px; }
 
-/* --- RESTRUCURACIÓN PERFIL ALCARAZ --- */
+
 .profile-card-new {
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -76,14 +76,14 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 }
 
 .profile-banner {
-    /* Degradado azul oscuro de fondo */
+    
     background: linear-gradient(135deg, #000033 0%, #001166 100%);
     position: relative;
     height: 150px;
     display: flex;
     align-items: flex-end;
     padding-left: 15px;
-    /* Efecto de líneas diagonales celestes */
+    
     background-image: repeating-linear-gradient(
         -45deg,
         transparent,
@@ -104,7 +104,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     font-size: 2.2rem;
     line-height: 0.85;
     margin: 0;
-    font-family: 'Arial Black', sans-serif; /* Para que sea bien gruesa la letra */
+    font-family: 'Arial Black', sans-serif; 
     letter-spacing: -1px;
 }
 
@@ -112,9 +112,9 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     position: absolute;
     right: -5px;
     bottom: 0;
-    height: 140px; /* Ajustado para que sobresalga bien */
+    height: 140px; 
     z-index: 1;
-    /* Mantenemos tu imagen original */
+    
     filter: drop-shadow(-5px 0px 10px rgba(0,0,0,0.3));
 }
 
@@ -139,11 +139,11 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 
 .player-stats-list li strong {
     font-weight: bold;
-    color: #008bb2; /* Color celeste oscuro para los números */
+    color: #008bb2; 
     font-size: 1.1rem;
 }
 
-/* --- NUEVA TARJETA DE ESTADÍSTICAS INFOSYS ATP STATS --- */
+
 .infosys-card-wrapper {
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -166,13 +166,13 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 }
 
 .infosys-brand {
-    color: #1e293b; /* Color oscuro para Infosys */
+    color: #1e293b; 
     font-size: 1.1rem;
     font-weight: bold;
 }
 
 .atp-stats-logo {
-    color: #0c4a6e; /* Color azul más oscuro para ATP STATS */
+    color: #0c4a6e; 
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: -0.5px;
@@ -192,7 +192,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     font-size: 1rem;
 }
 
-/* Pestañas */
+
 .infosys-tabs {
     display: flex;
     background: #fafafa;
@@ -204,7 +204,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     text-align: center;
     padding: 12px 15px;
     font-size: 0.9rem;
-    color: #475569; /* Color gris para las pestañas inactivas */
+    color: #475569; 
     cursor: pointer;
     border: none;
     border-bottom: 3px solid transparent;
@@ -213,7 +213,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 }
 
 .tab-btn.active {
-    color: #0c4a6e; /* Color azul para la pestaña activa */
+    color: #0c4a6e; 
     border-bottom-color: var(--atp-light-blue);
     font-weight: bold;
 }
@@ -222,11 +222,11 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 .infosys-table {
     width: 100%;
     border-collapse: collapse;
-    display: none; /* Ocultas por defecto */
+    display: none; 
 }
 
 .infosys-table.active {
-    display: table; /* Visible si está activa */
+    display: table; 
 }
 
 .infosys-table td {
@@ -260,10 +260,10 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 }
 
 .newsletter-sidebar-card {
-    background-color: #000033; /* Azul profundo oficial */
+    background-color: #000033; 
     color: white;
     padding: 30px 25px;
-    border-radius: 20px; /* Bordes muy redondeados como la captura */
+    border-radius: 20px; 
     margin-top: 30px;
     text-align: center;
     border: none;
@@ -299,7 +299,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #444;
-    background-color: #000022; /* Un toque más oscuro que el fondo */
+    background-color: #000022; 
     color: white;
     margin-bottom: 15px;
 }
@@ -307,7 +307,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 .btn-subscribe {
     width: 100%;
     padding: 15px;
-    background-color: #4b5464; /* Gris oscuro del botón original */
+    background-color: #4b5464; 
     color: #e0e0e0;
     border: none;
     border-radius: 10px;
@@ -332,13 +332,13 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     text-decoration: underline;
 }
 
-/* Tabla */
+
 .data-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 0.85rem; }
 .data-table th { background: #f4f4f4; padding: 12px; text-align: left; border-bottom: 2px solid var(--border-color); }
 .data-table td { padding: 12px; border-bottom: 1px solid var(--border-color); }
 .highlight-row { background-color: #f0f7ff; font-weight: bold; }
 
-/* H2H */
+
 .h2h-widget-new { background-color: #000033; color: white; border-radius: 8px; padding: 25px; margin: 40px 0; }
 .h2h-header { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; font-size: 0.8rem; opacity: 0.7; }
 .h2h-main-container { display: flex; justify-content: space-between; align-items: center; }
@@ -351,7 +351,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 .win-text { font-size: 0.6rem; color: var(--atp-neon); text-transform: uppercase; }
 .h2h-btn { background: transparent; color: white; border: 1px solid white; padding: 8px 25px; border-radius: 20px; cursor: pointer; margin-top: 20px; }
 
-/* Sidebar */
+
 .card { border: 1px solid var(--border-color); border-radius: 5px; margin-bottom: 20px; background: #fff; }
 .profile-card { background: linear-gradient(135deg, #000033, #002266); color: white; padding: 20px; }
 .profile-flex { display: flex; justify-content: space-between; align-items: center; }
@@ -364,7 +364,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 .newsletter-card { background: var(--atp-blue); color: white; padding: 25px; text-align: center; }
 .newsletter-card button { width: 100%; padding: 12px; background: #444; color: white; border: none; font-weight: bold; cursor: pointer; }
 
-/* FOOTER [image_17f65a.png] */
+
 .main-footer {
     background-color: #f4f4f7;
     padding: 60px 0;
