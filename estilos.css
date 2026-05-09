@@ -400,3 +400,71 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
 .link-group ul li { margin-bottom: 8px; }
 .link-group ul li a { text-decoration: none; color: #555; font-size: 0.8rem; }
 .link-group ul li a:hover { color: var(--atp-light-blue); }
+
+
+@media (max-width: 900px) {
+    /* 1. Quitamos el margen lateral que empuja todo a la izquierda */
+    .page-wrapper {
+        margin-left: 0;
+        border-left: none;
+    }
+
+    .social-sidebar {
+        display: none; /* Ocultamos la barra lateral de redes */
+    }
+
+    /* 2. Convertimos el grid de la noticia en 1 sola columna */
+    .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* 3. ARREGLO DEL FOOTER: Quitamos el margen negativo que lo rompe */
+    .main-footer {
+        margin-left: 0; 
+        padding: 40px 20px; /* Le damos aire interno para que no pegue a los bordes */
+    }
+
+    /* 4. Hacemos que el contenido del footer se apile verticalmente */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    /* 5. Ajustamos los links del footer para que no queden amontonados */
+    .footer-links {
+        grid-template-columns: 1fr 1fr; /* Dos columnas de links para celulares */
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .flex-nav {
+        flex-direction: column; /* Apilamos logo y menú */
+        text-align: center;
+    }
+
+    .main-nav ul {
+        padding: 10px 0;
+        justify-content: center;
+        flex-wrap: wrap; /* Si no entran, bajan a la siguiente línea */
+        gap: 10px;
+    }
+    
+    /* Achicamos un poco el título principal */
+    h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .h2h-main-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .h2h-center-stats {
+        order: -1; /* Ponemos el "Vs" arriba de los jugadores */
+    }
+}
