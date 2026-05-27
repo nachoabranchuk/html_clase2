@@ -446,7 +446,7 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     }
 }
 
-/* --- Estilos base del botón (Oculto en PC) --- */
+
 .menu-hamburguesa {
     display: none;
     background: transparent;
