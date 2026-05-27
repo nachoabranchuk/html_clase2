@@ -446,17 +446,35 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
     }
 }
 
+/* --- Estilos base del botón (Oculto en PC) --- */
+.menu-hamburguesa {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
+    
+    .main-nav nav, 
+    .nav-links,
+    .main-nav ul,
+    .nav-right {
+        display: none !important;
+    }
+    
     .flex-nav {
-        flex-direction: column; 
-        text-align: center;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100%;
     }
 
-    .main-nav ul {
-        padding: 10px 0;
-        justify-content: center;
-        flex-wrap: wrap; 
-        gap: 10px;
+    .menu-hamburguesa {
+        display: block !important;
     }
     
     
