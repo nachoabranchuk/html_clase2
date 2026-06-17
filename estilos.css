@@ -493,3 +493,143 @@ blockquote { border-left: 4px solid var(--atp-light-blue); padding: 15px 25px; f
         order: -1; 
     }
 }
+
+
+.single-layout {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.form-content-area h1 {
+    font-size: 2.5rem;
+    font-family: 'Arial Black', sans-serif;
+    color: var(--atp-blue);
+    margin-bottom: 5px;
+}
+
+.form-subtitle {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #333;
+    transition: color 0.2s;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 40px 12px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.status-icon {
+    position: absolute;
+    right: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    pointer-events: none;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    margin-top: 5px;
+    color: #cc0000;
+    display: none; 
+}
+
+.form-submit-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-submit-form {
+    padding: 15px 40px;
+    background-color: var(--atp-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.btn-submit-form:hover {
+    background-color: var(--atp-light-blue);
+}
+
+
+.form-group.invalid label {
+    color: #cc0000;
+}
+.form-group.invalid input {
+    border: 2px solid #cc0000;
+    background-color: #fff8f8;
+}
+.form-group.invalid .status-icon {
+    color: #cc0000;
+}
+.form-group.invalid .status-icon::after {
+    content: "✖";
+}
+.form-group.invalid .error-message {
+    display: block;
+}
+
+.form-group.valid input {
+    border: 2px solid #28a745;
+}
+.form-group.valid .status-icon {
+    color: #28a745;
+}
+.form-group.valid .status-icon::after {
+    content: "✔";
+}
+
+.form-group input:focus {
+    border: 2px solid #00afe8;
+    box-shadow: 0 0 5px rgba(0, 175, 232, 0.3);
+    background-color: #fff;
+}
+
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 40px;
+        row-gap: 25px;
+    }
+    
+    .form-submit-container {
+        grid-column: 1 / -1; 
+    }
+}

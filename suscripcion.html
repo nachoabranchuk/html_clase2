@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATP Tour - Suscripción</title>
+    <link rel="icon" type="image/x-icon" href="logo_atp.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <div class="social-sidebar">
+            <a href="https://www.facebook.com/ATPTour" target="_blank"><span class="social-icon">f</span></a>
+            <a href="https://twitter.com/atptour" target="_blank"><span class="social-icon">X</span></a>
+            <a href="https://www.tiktok.com/@atptour" target="_blank"><span class="social-icon">t</span></a>
+        </div>
+
+        <header class="main-nav">
+            <div class="container flex-nav">
+                <div class="logo"><a href="index.html" style="color: white; text-decoration: none;">ATP TOUR</a></div>
+                <button class="menu-hamburguesa">☰</button>
+                <nav>
+                    <ul>
+                        <li>Marcadores</li>
+                        <li>Reciente</li>
+                        <li>H2H</li>
+                        <li>Estadísticas</li>
+                        <li>Rankings</li>
+                        <li>Torneos</li>
+                    </ul>
+                </nav>
+                <div class="nav-right">
+                    <span class="shop-badge">Tienda</span>
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="container single-layout">
+            <main class="form-content-area">
+                
+                <h1 id="form-greeting">HOLA</h1>
+                <p class="form-subtitle">Completá tus datos para suscribirte al diario online oficial de la ATP.</p>
+                
+                <form id="subscription-form" novalidate>
+                    <div class="form-grid">
+                        
+                        <div class="form-group" id="group-fullname">
+                            <label for="fullname">Nombre completo</label>
+                            <div class="input-container">
+                                <input type="text" id="fullname" name="fullname">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-email">
+                            <label for="email">Email</label>
+                            <div class="input-container">
+                                <input type="email" id="email" name="email">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-password">
+                            <label for="password">Contraseña</label>
+                            <div class="input-container">
+                                <input type="password" id="password" name="password">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-confirmPassword">
+                            <label for="confirmPassword">Repetir contraseña</label>
+                            <div class="input-container">
+                                <input type="password" id="confirmPassword" name="confirmPassword">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-age">
+                            <label for="age">Edad</label>
+                            <div class="input-container">
+                                <input type="number" id="age" name="age">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-phone">
+                            <label for="phone">Teléfono</label>
+                            <div class="input-container">
+                                <input type="text" id="phone" name="phone">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-address">
+                            <label for="address">Dirección</label>
+                            <div class="input-container">
+                                <input type="text" id="address" name="address">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-city">
+                            <label for="city">Ciudad</label>
+                            <div class="input-container">
+                                <input type="text" id="city" name="city">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-zip">
+                            <label for="zip">Código Postal</label>
+                            <div class="input-container">
+                                <input type="text" id="zip" name="zip">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                        <div class="form-group" id="group-dni">
+                            <label for="dni">DNI</label>
+                            <div class="input-container">
+                                <input type="text" id="dni" name="dni">
+                                <span class="status-icon"></span>
+                            </div>
+                            <p class="error-message"></p>
+                        </div>
+
+                    </div>
+
+                    <div class="form-submit-container">
+                        <button type="submit" class="btn-submit-form">ENVIAR</button>
+                    </div>
+                </form>
+
+            </main>
+        </div>
+
+        <footer class="main-footer">
+            <div class="container footer-grid">
+                <div class="footer-subscribe">
+                    <img src="logo_atp.png" alt="ATP Logo" class="footer-logo">
+                    <h3>Suscríbete al boletín de la ATP Tour</h3>
+                    <p>Recibe comunicaciones oficiales de marketing de la ATP y la WTA...</p>
+                    <form class="footer-form">
+                        <label for="footer-email">Correo electrónico</label>
+                        <input type="email" id="footer-email" placeholder="nombre@dominio.com">
+                        <button type="submit">Suscribirse ✉</button>
+                    </form>
+                </div>
+
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Corporativo</h4>
+                        <ul>
+                            <li><a href="#">Acerca de</a></li>
+                            <li><a href="#">Gente y Cultura</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h4>Medios</h4>
+                        <ul>
+                            <li><a href="#">Comunicados de Prensa</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
